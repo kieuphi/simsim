@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-sm-3 col-sm-offset-4 frame">
+    <ul></ul>
+    <div>
+        <div class="msj-rta macro">
+            <div class="text text-r" style="background:whitesmoke !important">
+                <input class="mytext" placeholder="Type a message" />
+            </div>
+        </div>
+        <div style="padding:10px;">
+            <input type="button" class="glyphicon glyphicon-share-alt" value="Gui"/>
+        </div>
+    </div>
+</div>
+<script>
+    var me = {};
+    me.avatar = "https://avatars3.githubusercontent.com/u/37496706?s=460&v=4";
+
+    var simsim = {};
+    simsim.avatar = "data:image/png;base64,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";
+
+    function formatAMPM(date) {
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        var strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+    }
+
+    //-- No use time. It is a javaScript effect.
+    function insertChat(who, text, time) {
+        if (time === undefined) {
+            time = 0;
+        }
+        var control = "";
+        var date = formatAMPM(new Date());
+
+        if (who == "me") {
+            control = '<li style="width:100%">' +
+                '<div class="msj macro">' +
+                '<div class="avatar"><img class="img-circle" style="width:100%;" src="' + me.avatar + '" /></div>' +
+                '<div class="text text-l">' +
+                '<p>' + text + '</p>' +
+                '<p><small>' + date + '</small></p>' +
+                '</div>' +
+                '</div>' +
+                '</li>';
+        } else {
+            control = '<li style="width:100%;">' +
+                '<div class="msj-rta macro">' +
+                '<div class="text text-r">' +
+                '<p>' + text + '</p>' +
+                '<p><small>' + date + '</small></p>' +
+                '</div>' +
+                '<div class="avatar" style="padding:0px 0px 0px 10px !important"><img class="img-circle" style="width:100%;" src="' + simsim.avatar + '" /></div>' +
+                '</li>';
+        }
+        setTimeout(
+            function () {
+                $("ul").append(control).scrollTop($("ul").prop('scrollHeight'));
+            }, time);
+
+    }
+
+    function resetChat() {
+        $("ul").empty();
+    }
+
+    //$(".mytext").on("keydown", function (e) {
+    //    if (e.which == 13) {
+    //        var text = $(this).val();
+    //        if (text !== "") {
+    //            insertChat("me", text);
+    //            //$(this).val('');
+    //        }
+    //    }
+    //});
+
+    $('body > div > div > div:nth-child(2) > input').click(function () {
+        //$(".mytext").trigger({ type: 'keydown', which: 13, keyCode: 13 });
+      
+        var x = $(".mytext").val();
+        insertChat("me", x);
+        $.ajax({
+            url: '/message/simsim',
+            type: "POSt",
+            data: {t:x},
+            dataType: 'text',
+            success: function (data) {
+                insertChat("simsim", data);
+            }
+        })
+        $(".mytext").val('');
+    })
+
+    //-- Clear Chat
+    resetChat();
+</script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
